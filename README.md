@@ -2,7 +2,7 @@
 For STA215 (Fall 2024), all 110 episodes of Wizards of Waverly Place were examined using 28 variables. The variables examined in this code are “conflict,” “violence,” “involvement,” “rating,” and “guest.”
 
 # Introduction
-To access and utilize the script, open “hall.R”, to access the data set open “data.csv”, and to access the codebook open “codebook.pdf”.
+To access and utilize the script, open “hall.R”, to access the data set open “final project data.csv”, and to access the codebook open “STA - codebook.pdf”.
 
 # Data
 In this case, a simple random sample is not needed because we collect data on the entire show, both population size and sample size = 110.
