@@ -93,6 +93,10 @@ ggplot(data, aes(x = rating, y = guest)) +
 cor(data$rating, data$guest, method = "pearson")
 cor.test(data$rating, data$guest)
 
+# calculate the intercept
+model <- lm(guest ~ rating, data = data)
+intercept <- coefficients(model)["(Intercept)"]
+
 # linear regression
 model <- lm(guest ~ rating, data = data)
 summary(model)
