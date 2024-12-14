@@ -97,6 +97,11 @@ cor.test(data$rating, data$guest)
 model <- lm(guest ~ rating, data = data)
 intercept <- coefficients(model)["(Intercept)"]
 
+# calculate the r squared
+model <- lm(guest ~ rating, data = data)
+r_squared <- summary(model)$r.squared
+print(r_squared)
+
 # linear regression
 model <- lm(guest ~ rating, data = data)
 summary(model)
