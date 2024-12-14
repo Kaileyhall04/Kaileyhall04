@@ -84,10 +84,14 @@ ggplot(data, aes(x = rating, y = guest)) +
   ggtitle("Scatter Plot for Rating and The Number of Guests") + 
   xlab("Rating") +
   ylab("Number of Guests") +
-  theme_minimal()
+  theme_minimal() +
   geom_vline(xintercept = mean_x, color = "red", lwd = 2, lty = 2) +
-  geom_hline(yintercept = mean_y, color = "purple", lwd = 2, lty = 2)
+  geom_hline(yintercept = mean_y, color = "purple", lwd = 2, lty = 2) +
   geom_smooth(method = "lm", color = "green", lw = 2)
+
+# calculate the correlation coefficient
+cor(data$rating, data$guest, method = "pearson")
+cor.test(data$rating, data$guest)
 
 # linear regression
 model <- lm(guest ~ rating, data = data)
